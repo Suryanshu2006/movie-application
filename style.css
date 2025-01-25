@@ -1,0 +1,15 @@
+#movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h3,h1{
+    text-align: center;
+}
+
+img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
