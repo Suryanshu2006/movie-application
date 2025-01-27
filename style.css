@@ -13,3 +13,16 @@ img{
     display: block;
     margin: auto;
 }
+
+
+#model{
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 25rem;
+    width: max-content;
+    background-color: aqua;
+}
+#close{
+    padding: 1rem;
+}

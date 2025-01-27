@@ -14,6 +14,23 @@ function fetchMovies(){
         img.src=ele.Poster;
         h3.innerHTML=ele.Title;
         div.append(img,h3);
+        const closeButton=document.getElementById("close");
+        closeButton.addEventListener("click",()=>{
+            const model = document.getElementById("model");
+            model.style.display="none";
+        })
+        div.addEventListener("click",()=>{
+            const model = document.getElementById("model");
+            const year=document.getElementById("year");
+            const title=document.getElementById("title");
+            model.style.display="block";
+
+            title.textContent=ele.Title; 
+
+            year.textContent=ele.Year;
+            console.log("card clicked");
+
+        })
         movies.appendChild(div);
         })
 
